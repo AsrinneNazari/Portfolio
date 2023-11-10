@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@1,8..144,100&display=swap');
+
+
+@mixin primary-style {
+    color: rgb(44, 44, 44);
+}
+
+@mixin flex-style {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+.header{
+    display: block;
+}
+
+.header-image{
+    position: relative;
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    height: 370px;
+    
+}
+
+.namn-header{
+    font-size: 14px;
+    @include primary-style();
+}
+
+.namn-titel-2,
+.namn-titel-3 {
+    font-size: 40px;
+}
+
+/* Contact i header */
+
+.social-media-links{
+    display: flex;
+    position: absolute;
+    width: 160px;
+    height: 60px;
+    top: 40px;
+    left: 700px;
+    justify-content: center;
+    }
+
+.social-icons-linkedin-top,
+.social-icons-github-top {
+    img {
+        height: 25px;
+        width: 25px;
+        }
+}    
+
+.social-icons-linkedin-top{
+    margin-right: 10px;
+}
+
+.social-icons-github-top:hover,
+.social-icons-linkedin-top:hover {
+    opacity: 0.5;
+    color: white;
+    cursor: pointer;
+}
+
+.namn-titel{
+    position: absolute;
+    top: 150px;
+    right: 600px;
+}
+
+/* Om mig */
+
+.about-me{
+    width: 657.78px;
+    height: 200px;
+    background-color: #C9E6F7;
+    color: black;
+    margin: 0 auto;
+    padding: 30px 10px 10px 20px;
+    font-size: 0.8rem;
+    @include primary-style();
+}
+
+.waving-icon{
+    width: 25px;
+}
+
+/* Skills */
+.skills-section{
+    @include flex-style();
+}
+
+.skills-head{
+    margin-top: 20px;
+}
+
+.section-skills{
+display:flex;
+justify-content: center;
+width: 657.78px;
+color: black;
+margin: 50px auto;
+@include primary-style();
+}
+
+.cv-link{
+text-decoration:none;
+}
+
+
+.cv-link:hover{
+    color: gray;
+    cursor: pointer;    
+}
+
+.pen-icon{
+    width: 25px;
+}
+
+/* Projects */
+.projects-head{
+    @include flex-style();
+    margin-top: 20px;
+     
+}
+    
+
+.projects{
+@include primary-style();
+@include flex-style();
+width: 657.78px;
+background-color: #C9E6F7;
+color: black;
+margin: 20px auto;
+justify-content: space-between;
+}
+
+/* Contact */
+
+.contact-head{
+    @include flex-style();
+}
+
+.section-contact{
+margin: 20px;
+display: flex;
+flex-direction: center;
+align-items: center; 
+justify-content: center;
+gap: 10px;
+}
+
+.social-media-links{
+display: flex;
+position: absolute;
+justify-content: center;
+}
+
+.social-icons-linkedin-bottom:hover,
+.social-icons-github-bottom:hover
+{
+    opacity: 0.5;
+    color: white;
+    cursor: pointer;
+}
+
+/* footer */
+footer{
+    @include primary-style();
+    @include flex-style();
+}
