@@ -1,195 +1,190 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@1,8..144,100&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@1,8..144,100&display=swap");
 @import "mixinsandStuff";
 
-*{
-    margin: 0;
-    padding:0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+body,
+html {
+  height: 100%;
 }
 
-main{
-    display: flex;
-    justify-content: center;
+main {
+  display: flex;
+  justify-content: center;
 }
 
 /* Header info */
 
-.header{
-    display: block;
+.header {
+  position: relative;
+  background-image: url("/img/Watercolor-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  justify-content: space-between;
 }
 
-.header-image{
-    position: relative;
-    display: block;
-    width: 100vh;
-    height: 100%;
-    object-fit: cover; 
-}
-
-.namn-header{
-    font-size: 1rem;
-    @include primary-style();
+.namn-header {
+  font-size: 1rem;
+  @include primary-style();
 }
 
 .namn-titel-2,
 .namn-titel-3 {
-    font-size: 3rem;
-    font-weight: 700;
+  font-size: 3rem;
+  font-weight: 700;
 }
 
-.namn-titel{
-    position: absolute;
-    top: 120px;
-    left: -300px;
+.namn-titel {
+  /* position: absolute; */
+  /*  top: 120px; */
+  /* left: 100px; */
+  padding: 10px;
 }
 
 /* Contact i header */
 
-.social-media-links{
-    display: flex;
-    position: absolute;
-    width: 160px;
-    height: 60px;
-    top: 40px;
-    left: 700px;
+.social-media-links {
+  height: 60px;
+  display: flex;
+  gap: 10px;
+  padding: 10px
 }
 
 .social-icons-linkedin-top,
 .social-icons-github-top {
-    img {
-        height: 25px;
-        width: 25px;
-        }
-}    
+  img {
+    height: 25px;
+    width: 25px;
+  }
+}
 
-.social-icons-linkedin-top{
-    margin-right: 20px;
-    width: 2%; 
+.social-icons-linkedin-top {
+//   margin-right: 20px;
+//   width: 2%;
 }
 
 .social-icons-github-top:hover,
 .social-icons-linkedin-top:hover {
-    opacity: 0.5;
-    color: white;
-    cursor: pointer;
+  opacity: 0.5;
+  color: white;
+  cursor: pointer;
 }
-
 
 /* About me*/
 
-.about-me{
-    height: 50vh;
-    width: 100vh;
-    margin: 0 auto;
-    padding: 30px 10px 10px 20px;
-    font-size: 1.1rem;
-    @include boxColors();
-    @include primary-style();
+.about-me {
+  height: 50vh;
+  width: 100vh;
+  margin: 0 auto;
+  padding: 30px 10px 10px 20px;
+  font-size: 1.1rem;
+  @include boxColors();
+  @include primary-style();
 }
 
-.waving-icon{
-    width: 25px;
+.waving-icon {
+  width: 25px;
 }
 
 /* Skills */
 
-.skills-section{
-    height: 50vh;
-    @include flex-style();
+.skills-section {
+  height: 50vh;
+  @include flex-style();
 }
 
-.skills-head{
-    margin-top: 20px;
+.skills-head {
+  margin-top: 20px;
 }
 
-.section-skills{
-display:flex;
-font-size: 1.3rem;
-justify-content: center;
-margin: 20px auto;
-@include boxColors();
-@include widthHeight();
-@include primary-style();
+.section-skills {
+  display: flex;
+  font-size: 1.3rem;
+  justify-content: center;
+  margin: 20px auto;
+  @include boxColors();
+  @include widthHeight();
+  @include primary-style();
 }
 
-.cv-link{
-text-decoration:none;
-font-size: 1.1rem;
+.cv-link {
+  text-decoration: none;
+  font-size: 1.1rem;
 }
 
-.cv-link:hover{
-    color: gray;
-    cursor: pointer;    
+.cv-link:hover {
+  color: gray;
+  cursor: pointer;
 }
 
-.pen-icon{
-    width: 25px;
+.pen-icon {
+  width: 25px;
 }
 
 /* Projects */
-.projects-head{
-    @include flex-style();
-    margin-top: 20px;
+.projects-head {
+  @include flex-style();
+  margin-top: 20px;
 }
-    
-.projects{
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 20px auto;
-    justify-content: space-between;
-    @include boxColors();
-    @include widthHeight();
-    @include primary-style();
-    @include flex-style();
+
+.projects {
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 20px auto;
+  justify-content: space-between;
+  @include boxColors();
+  @include widthHeight();
+  @include primary-style();
+  @include flex-style();
 }
 
 /* Contact */
 
-.contact-head{
-    @include flex-style();
+.contact-head {
+  @include flex-style();
 }
 
-.section-contact{
-margin: 20px;
-display: flex;
-flex-direction: center;
-align-items: center; 
-justify-content: center;
-gap: 10px;
-}
-
-.social-media-links{
-display: flex;
-position: absolute;
-justify-content: center;
+.section-contact {
+  margin: 20px;
+  display: flex;
+  flex-direction: center;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
 .social-icons-linkedin-bottom:hover,
-.social-icons-github-bottom:hover
-{
-    opacity: 0.5;
-    color: white;
-    cursor: pointer;
+.social-icons-github-bottom:hover {
+  opacity: 0.5;
+  color: white;
+  cursor: pointer;
 }
 
 /* footer */
-footer{
-    @include primary-style();
-    @include flex-style();
+footer {
+  @include primary-style();
+  @include flex-style();
 }
 
 /* FIXA! */
-@media screen and (min-width: 768px){
-    .header {
-        .social-media-links {
-          left: 60px;
-          width: 120%; 
-        }
-    
-        .namn-titel {
-          right: 0; // Anpassa position för mindre skärmar
-          text-align: center; // För att centrera texten
-        }
-      }
+@media screen and (min-width: 768px) {
+  .header {
+    .social-media-links {
+    //   left: 60px;
+    //   width: 120%;
     }
+
+    .namn-titel {
+      // right: 0; // Anpassa position för mindre skärmar
+      text-align: center; // För att centrera texten
+    }
+  }
+}
