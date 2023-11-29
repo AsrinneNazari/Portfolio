@@ -12,10 +12,15 @@
 
 @mixin widthHeight{
     width: 100vh;
-    height: 100vh;
+    height: 100%;
 }
 
 @mixin boxColors{
     background-color: #C9E6F7;
     color: black;
 }
+
+@mixin paddingBox{
+    padding: 30px 50px 20px 50px;
+}
+
