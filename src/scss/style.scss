@@ -31,20 +31,19 @@ main {
   justify-content: space-between;
 }
 
-.namn-header {
+.name-header {
   font-size: 1rem;
+  margin-top: 150px;
   @include primary-style();
 }
 
-.namn-titel-2,
-.namn-titel-3 {
+.name-title-2,
+.name-title-3 {
   font-size: 3rem;
   font-weight: 700;
 }
 
-.namn-titel {
-  /*  top: 120px; */
-  /* left: 100px; */
+.name-title {
   padding: 10px;
 }
 
@@ -65,11 +64,6 @@ main {
   }
 }
 
-.social-icons-linkedin-top {
-//   margin-right: 20px;
-//   width: 2%;
-}
-
 .social-icons-github-top:hover,
 .social-icons-linkedin-top:hover {
   opacity: 0.5;
@@ -80,7 +74,8 @@ main {
 /* About me*/
 
 .about-me {
-  height: 50vh;
+  display:flex;
+  align-items:flex-start;
   width: 100%;
   margin: 0 auto;
   font-size: 1.1rem;
@@ -96,7 +91,6 @@ main {
 /* Skills */
 
 .skills-section {
-  height: 50vh;
   @include flex-style();
 }
 
@@ -111,7 +105,6 @@ main {
   margin: 20px auto;
   @include paddingBox();
   @include boxColors();
-  /* @include widthHeight(); */
   @include primary-style();
 }
 
@@ -181,9 +174,9 @@ footer {
     //   width: 120%;
     }
 
-    .namn-titel {
+    .name-title {
       // right: 0; // Anpassa position för mindre skärmar
-      text-align: center; // För att centrera texten
+      text-align: center; 
     }
   }
 }
