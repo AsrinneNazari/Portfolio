@@ -47,7 +47,7 @@ main {
   padding: 10px;
 }
 
-/* Contact i header */
+/* Contact in header */
 
 .social-media-links {
   height: 60px;
@@ -69,6 +69,39 @@ main {
   opacity: 0.5;
   color: white;
   cursor: pointer;
+}
+
+/* Profile picture */
+
+.profilepicContainer {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10px;
+}
+
+.edgepicture {
+  background: plum;
+  width: 200px;
+  height: 200px;
+  border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+  overflow: hidden;
+  animation: morph 6s linear infinite;
+}
+
+.edgepicture img {
+  width: 100%;
+}
+
+@keyframes morph{
+  0%, 100% {
+  border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
+  }
+  34% {
+    border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%;
+  }
+  67% {
+    border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+  }
 }
 
 /* About me*/
@@ -173,6 +206,12 @@ footer {
     //   left: 60px;
     //   width: 120%;
     }
+
+    .profilepicContainer {
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 100px;
+    }  
 
     .name-title {
       // right: 0; // Anpassa position för mindre skärmar
