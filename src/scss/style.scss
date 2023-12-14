@@ -104,9 +104,18 @@ main {
   }
 }
 
+/* Navbar */
+#nav-bar{
+  display:flex;
+}
+
+#menu{
+  background-color: blue;
+}
+
 /* About me*/
 
-.about-me {
+#about-me {
   display:flex;
   align-items:flex-start;
   width: 100%;
@@ -123,7 +132,7 @@ main {
 
 /* Skills */
 
-.skills-section {
+#skills-section {
   @include flex-style();
 }
 
@@ -131,7 +140,7 @@ main {
   margin-top: 20px;
 }
 
-.section-skills {
+.skills-content {
   display: flex;
   font-size: 1.3rem;
   justify-content: center;
@@ -161,7 +170,7 @@ main {
   margin-top: 20px;
 }
 
-.projects {
+#projects {
   flex-direction: row;
   flex-wrap: wrap;
   margin: 20px auto;
@@ -177,7 +186,7 @@ main {
   @include flex-style();
 }
 
-.section-contact {
+#section-contact {
   margin: 20px;
   display: flex;
   flex-direction: center;
