@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@1,8..144,100&display=swap");
 @import "mixinsandStuff";
+@import "profilepic";
 
 * {
   margin: 0;
@@ -104,14 +105,94 @@ main {
   }
 }
 
-/* Navbar */
-#nav-bar{
-  display:flex;
+/* Navbar/Hambugermenu */
+
+li{
+  list-style: none;
 }
 
-#menu{
-  background-color: blue;
+.nav-link{
+  text-decoration: none;
 }
+
+.nav-bar{
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+
+}
+
+.nav-link{
+  transition: 0.3s ease;
+}
+
+.nav-link:hover{
+  color: gray; /* ändra färg sen? */
+}
+
+.hamburger{
+  display: none;
+  cursor: pointer;
+}
+
+.bar{
+  display: block;
+  background-color:black;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+
+
+@media (max-width: 1024px){
+  .hamburger{
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2){
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu{
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    width: 100%;
+    background-color: pink;
+    text-align: center;
+    transition: 0.3s;
+    }
+
+    .nav-item{
+      margin: 16px 0;
+    }
+    
+    .nav-menu.active{
+      left: 0;
+    }
+}
+
+
 
 /* About me*/
 
