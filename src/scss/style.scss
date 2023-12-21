@@ -155,7 +155,7 @@ li{
 
 
 
-@media (max-width: 1024px){
+@media (max-width: 768px){
   .hamburger{
     display: block;
   }
@@ -193,7 +193,6 @@ li{
 }
 
 
-
 /* About me*/
 
 #about-me {
@@ -229,6 +228,11 @@ li{
   @include paddingBox();
   @include boxColors();
   @include primary-style();
+}
+
+.skill-logo{
+  width: 50px;
+  height: 50px;
 }
 
 .cv-link {
