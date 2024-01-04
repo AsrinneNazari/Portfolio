@@ -18,7 +18,7 @@ main {
   justify-content: center;
 }
 
-/* Header info */
+/* Heroimg info */
 
 .header {
   position: relative;
@@ -105,7 +105,7 @@ main {
   }
 }
 
-/* Navbar/Hambugermenu */
+/* Navbar/Hamburgermenu */
 
 li{
   list-style: none;
@@ -117,6 +117,7 @@ li{
 
 .nav-bar{
   min-height: 70px;
+  position: sticky;
   display: flex;
   justify-content: space-between;
   align-items: center;
