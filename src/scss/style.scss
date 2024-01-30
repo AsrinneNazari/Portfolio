@@ -266,13 +266,20 @@ li{
 }
 
 #projects {
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: flex;
+ /*  flex-wrap: wrap; */
   margin: 20px auto;
   justify-content: space-between;
   @include boxColors();
   @include primary-style();
   @include flex-style();
+}
+
+
+
+.project-one{
+  width: 20px;
+  height: auto;
 }
 
 /* Contact */
