@@ -36,12 +36,15 @@ main {
   font-size: 1rem;
   margin-top: 150px;
   @include primary-style();
+  letter-spacing: 0.1rem;
 }
 
 .name-title-2,
 .name-title-3 {
-  font-size: 3rem;
-  font-weight: 700;
+  font-size: 3.5rem;
+  font-weight: 550;
+  font-family: 'Abril Fatface', serif;
+  letter-spacing: 0.3rem;
 }
 
 .name-title {
@@ -220,6 +223,11 @@ li{
 
 /* Skills */
 
+/* .skills{
+  display: flex;
+
+} */
+
 #skills-section {
   @include flex-style();
 }
@@ -231,11 +239,18 @@ li{
 .skills-content {
   display: flex;
   font-size: 1.3rem;
-  justify-content: center;
+  flex-direction: column;
   margin: 20px auto;
   @include paddingBox();
   @include boxColors();
   @include primary-style();
+}
+
+@media (min-width: 768px){
+  .skills-content{
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 }
 
 .skill-logo{
