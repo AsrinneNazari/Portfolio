@@ -225,7 +225,7 @@ li{
 
 /* .skills{
   display: flex;
-
+22
 } */
 
 #skills-section {
@@ -258,8 +258,6 @@ li{
   height: 50px;
 }
 
-
-
 .cv-link {
   text-decoration: none;
   font-size: 1.1rem;
@@ -290,11 +288,23 @@ li{
   @include flex-style();
 }
 
-
-
 .project-one{
-  width: 20px;
-  height: auto;
+  display: flex;
+  flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: center;
+}
+
+.todo{
+  height: 19rem; 
+  width: 30rem; 
+  border-radius: 10px;
+}
+.todo-info{
+  padding: 25px;
+  background-color: white;
+  width: 30rem; 
 }
 
 /* Contact */
