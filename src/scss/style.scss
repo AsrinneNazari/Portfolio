@@ -108,7 +108,7 @@ main {
   }
 }
 
-/* Navbar/Hamburgermenu */
+/* Navbar/Hamburgermeny */
 
 li{
   list-style: none;
@@ -116,6 +116,7 @@ li{
 
 .nav-link{
   text-decoration: none;
+  color: black;
 }
 
 .nav-bar{
@@ -131,7 +132,6 @@ li{
   justify-content: space-between;
   align-items: center;
   gap: 50px;
-
 }
 
 .nav-link{
@@ -239,7 +239,9 @@ li{
 .skills-content {
   display: flex;
   font-size: 1.3rem;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
   margin: 20px auto;
   @include paddingBox();
   @include boxColors();
@@ -254,8 +256,8 @@ li{
 }
 
 .skill-logo{
-  width: 50px;
-  height: 50px;
+  width: 4rem;
+  height: 4rem;
 }
 
 .cv-link {
@@ -269,7 +271,7 @@ li{
 }
 
 .pen-icon {
-  width: 25px;
+  width: 2rem;
 }
 
 /* Projects */
@@ -294,6 +296,11 @@ li{
 	justify-content: flex-start;
 	align-items: center;
 	align-content: center;
+  border: solid black 1px;
+  width: 100%;
+  >a{
+    width: 100%;
+  }
 }
 
 .todo{
@@ -302,7 +309,7 @@ li{
   border-radius: 10px;
 }
 .todo-info{
-  padding: 25px;
+  padding: 30px;
   background-color: white;
   width: 40%; 
 }
