@@ -282,7 +282,7 @@ li{
 
 #projects {
   display: flex;
- /*  flex-wrap: wrap; */
+  /* flex-wrap: wrap; */
   margin: 20px auto;
   justify-content: space-between;
   @include boxColors();
@@ -290,7 +290,7 @@ li{
   @include flex-style();
 }
 
-.project-one{
+.project-one, .project-two{
   display: flex;
   flex-direction: column;
 	justify-content: flex-start;
@@ -303,12 +303,12 @@ li{
   }
 }
 
-.todo{
+.project{
   height: 40%; 
   width: 40%; 
   border-radius: 10px;
 }
-.todo-info{
+.project-info{
   padding: 30px;
   background-color: white;
   width: 40%; 
