@@ -257,6 +257,8 @@ li{
 
 .cv-link{
   margin-bottom: 20px;
+  text-decoration: none;
+  font-size: 1.1rem;
 }
 
 
@@ -265,10 +267,8 @@ li{
   height: 4rem;
 }
 
-.cv-link {
-  text-decoration: none;
-  font-size: 1.1rem;
-}
+
+
 
 .cv-link:hover {
   color: gray;
