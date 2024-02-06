@@ -13,3 +13,5 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
 })
 )
 
+jQuery("img").each( function(){ jQuery(this).attr("title",jQuery(this).attr("alt")  ) });
+
