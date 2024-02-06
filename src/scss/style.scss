@@ -223,17 +223,16 @@ li{
 
 /* Skills */
 
-/* .skills{
-  display: flex;
-22
-} */
-
 #skills-section {
   @include flex-style();
 }
 
 .skills-head {
   margin-top: 20px;
+}
+
+.skills{
+  @include boxColors();
 }
 
 .skills-content {
@@ -244,7 +243,6 @@ li{
   flex-wrap: wrap;
   margin: 20px auto;
   @include paddingBox();
-  @include boxColors();
   @include primary-style();
 }
 
@@ -298,7 +296,6 @@ li{
 
 #projects {
   display: flex;
-  /* flex-wrap: wrap; */
   margin: 20px auto;
   justify-content: space-between;
   @include boxColors();
