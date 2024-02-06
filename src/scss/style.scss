@@ -294,38 +294,51 @@ li{
   @include primary-style();
   @include flex-style();
 }
+@media (min-width: 768px){
+  .project-content{
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}
 
 
 .project-one, .project-two{
   display: flex;
   flex-direction: column;
-	justify-content: flex-start;
+  width: 100%;
 	align-items: center;
 	align-content: center;
-/*   >a{
-    width: 0;
-  } */
+  margin-bottom: 20px;
 }
 
-.project-link{
-  display: inline-block;
-  border: solid black 1px;
-  overflow: hidden;
-  padding: 5px;
+@media (min-width: 768px){
+  .project-one, .project-two{
+    width: 50%;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
 }
 
 .project{
-  width: 40%; 
+  width: 100%; 
   border-radius: 10px 10px 0 0;
 }
 .project-info{
   margin-top: -5px;
   padding: 30px;
   background-color: white;
-  width: 40%; 
+  width: 100%; 
   border-radius: 0 0 10px 10px;
   border: solid black 1px;
 }
+@media (min-width: 768px){
+.project-info{
+  align-items: start;
+  border-radius: 10px; //från chat
+  margin-top: 20px;    //från chat
+}  
+}
+
 
 /* Contact */
 

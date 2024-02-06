@@ -12,6 +12,3 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
     navMenu.classList.remove("active");
 })
 )
-
-jQuery("img").each( function(){ jQuery(this).attr("title",jQuery(this).attr("alt")  ) });
-
