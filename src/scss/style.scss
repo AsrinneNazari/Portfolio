@@ -227,21 +227,23 @@ li{
   @include flex-style();
 }
 
-.skills-head {
+.skills-head{
   margin-top: 20px;
 }
 
 .skills{
+  margin: 10px auto;
+  width: 100%;
   @include boxColors();
 }
 
-.skills-content {
+.skills-content{
   display: flex;
   font-size: 1.3rem;
   flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  margin: 20px auto;
+  margin: 10px 10px;
   @include paddingBox();
   @include primary-style();
 }
@@ -253,21 +255,10 @@ li{
   }
 }
 
-.desc-text{
-  display: none;
-  width: 120px;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  padding: 5px 0;
-  border-radius: 6px;
-  position: absolute;
-  z-index: 1;
+.cv-link{
+  margin-bottom: 20px;
 }
 
-.skill-logo:hover + .desc-text{
-  display: block;
-}
 
 .skill-logo{
   width: 4rem;
@@ -294,14 +285,16 @@ li{
   margin-top: 20px;
 }
 
-#projects {
+.project-content{
   display: flex;
   margin: 20px auto;
+  padding: 20px;
   justify-content: space-between;
   @include boxColors();
   @include primary-style();
   @include flex-style();
 }
+
 
 .project-one, .project-two{
   display: flex;
