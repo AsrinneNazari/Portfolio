@@ -302,21 +302,29 @@ li{
 	justify-content: flex-start;
 	align-items: center;
 	align-content: center;
+/*   >a{
+    width: 0;
+  } */
+}
+
+.project-link{
+  display: inline-block;
   border: solid black 1px;
-  >a{
-    width: 100%;
-  }
+  overflow: hidden;
+  padding: 5px;
 }
 
 .project{
-  height: 40%; 
   width: 40%; 
-  border-radius: 10px;
+  border-radius: 10px 10px 0 0;
 }
 .project-info{
+  margin-top: -5px;
   padding: 30px;
   background-color: white;
   width: 40%; 
+  border-radius: 0 0 10px 10px;
+  border: solid black 1px;
 }
 
 /* Contact */
