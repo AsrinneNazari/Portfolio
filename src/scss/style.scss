@@ -314,7 +314,7 @@ li{
 @media (min-width: 768px){
   .project-one, .project-two{
     width: 50%;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-start;
   }
 }
