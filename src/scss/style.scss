@@ -289,20 +289,23 @@ li{
   display: flex;
   margin: 20px auto;
   padding: 20px;
-  justify-content: space-between;
+  justify-content: space-evenly;
   @include boxColors();
   @include primary-style();
   @include flex-style();
 }
 @media (min-width: 768px){
   .project-content{
+    align-content: flex-start;
     flex-direction: row;
-    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 1px; 
+
   }
 }
 
 
-.project-one, .project-two{
+.project{
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -312,10 +315,11 @@ li{
 }
 
 @media (min-width: 768px){
-  .project-one, .project-two{
+  .project{
     width: 50%;
     flex-direction: column;
     justify-content: flex-start;
+    flex-basis: 40%;
   }
 }
 
@@ -324,18 +328,18 @@ li{
   border-radius: 10px 10px 0 0;
 }
 .project-info{
-  margin-top: -5px;
+  margin-top: -20px;
   padding: 30px;
   background-color: white;
   width: 100%; 
+  height: 7rem;
   border-radius: 0 0 10px 10px;
   border: solid black 1px;
 }
 @media (min-width: 768px){
 .project-info{
   align-items: start;
-  border-radius: 10px; //från chat
-  margin-top: 20px;    //från chat
+  border-radius: 0px 0px 10px 10px; 
 }  
 }
 
