@@ -211,10 +211,11 @@ li{
   align-items:flex-start;
   width: 100%;
   margin: 0 auto;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   @include boxColors();
   @include primary-style();
   @include paddingBox();
+  padding: 50px;
 }
 
 .waving-icon {
